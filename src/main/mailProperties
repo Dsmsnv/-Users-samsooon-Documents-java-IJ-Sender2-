@@ -1,0 +1,11 @@
+//я тестировал на GMAIL
+
+mail.transport.protocol=smtps
+mail.smtps.auth=true
+mail.smtps.host=smtp.googlemail.com
+mail.smtps.user=<yourEmailAdress>
+mail.smtp.port=465
+
+outMail=<yourEmailAdress>
+outMailPass=<yourEmailAdressPassword>
+toMailAdress=<toEmailAddress>
