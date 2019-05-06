@@ -29,11 +29,11 @@ class Sender {
 
         //Подключаю Настройки почты и тд
         Properties properties = new Properties();
-        try { properties.load(new FileInputStream(new File("/Users/samsooon/Documents/java/IJ/Sender2/src/main/mailProperties")));
+        try { properties.load(new FileInputStream(new File("src/main/mailProperties")));
         }catch (Exception IOE1) { System.out.println ("ERROR IOE1"); }
 
         //Беру из файла и переставляю значения &name% и &phone% на введенные знaчения
-        String contents = new String(readUsingFiles("/Users/samsooon/Documents/java/IJ/Sender2/src/main/text"));
+        String contents = new String(readUsingFiles("src/main/text"));
         System.out.println("Введите ваше имя");
         contents = (contents.replace("&name%", in.nextLine()));
         System.out.println("Введите ваш номер телефона");
